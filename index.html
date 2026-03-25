@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hirise Help</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+    }
+
+    header {
+      background: #1e88e5;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: 0.3s;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .card h3 {
+      margin: 0;
+      color: #333;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #666;
+      margin-top: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>Hirise Help</header>
+
+<div class="container">
+
+  <div class="card" onclick="openLink('')">
+    <h3>Section 1</h3>
+    <p>Click to open</p>
+  </div>
+
+  <div class="card" onclick="openLink('')">
+    <h3>Section 2</h3>
+    <p>Click to open</p>
+  </div>
+
+  <div class="card" onclick="openLink('')">
+    <h3>Section 3</h3>
+    <p>Click to open</p>
+  </div>
+
+  <div class="card" onclick="openLink('')">
+    <h3>Section 4</h3>
+    <p>Click to open</p>
+  </div>
+
+  <div class="card" onclick="openLink('')">
+    <h3>Section 5</h3>
+    <p>Click to open</p>
+  </div>
+
+</div>
+
+<script>
+  function openLink(link) {
+    if(link){
+      window.open(link, '_blank');
+    } else {
+      alert('Link not added yet');
+    }
+  }
+</script>
+
+</body>
+</html>
